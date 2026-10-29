@@ -29,3 +29,16 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python analysis.py
+```
+
+## Output files
+
+- `output/customers.csv` — flattened customer records.
+- `output/city_counts.csv` — customer counts by city.
+- `output/customer_distribution.png` — chart of customers by email ending.
+
+## Assumptions and limitations
+
+- JSONPlaceholder provides sample data; it is not a verified Pesa Pulse customer directory.
+- `email_domain` means the final part of an email address, such as `biz` or `tv`.
+- The findings describe only the 10 records returned by this sample API.
